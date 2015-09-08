@@ -1,0 +1,6 @@
+# vim
+*.swp
+*.swo
+
+# test data
+*.c.styled
