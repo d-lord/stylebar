@@ -1,6 +1,6 @@
-" ==============================
-" Style marking for tutors: dev
-" ==============================
+" =========================
+" Style marking for tutors
+" =========================
 augroup style
         autocmd!
         autocmd BufReadPost *.c.styled setlocal statusline=%!GetViolationString()
@@ -15,7 +15,7 @@ function! GetViolations()
         let b:violations_linelength = 0
         let b:violations_indentation = 0
         for line in getline(1, '$')
-                if line =~# '\[BRACES\]'
+                if line =~# '^\[BRACES\]'
                         let b:violations_braces = b:violations_braces + 1
                 endif
                 if line =~# '^\[WHITESPACE\]'
