@@ -21,6 +21,9 @@ let g:style_annotations = [
 
 function! CalcViolations()
     let g:style_scores = {}
+    " this line needs expanding: getline() is the current buffer, we want all
+    " buffers matching *.(c|h).styled.
+    " at that point it's probably worth reducing the recalc count.
     for line in getline(1, '$')
 	for annotation in g:style_annotations
 	    if line =~# '^\[' . annotation[1] . '\]'
