@@ -4,6 +4,7 @@
 " Author: David Lord	https://github.com/d-lord
 " Thanks: Barry Arthur	https://github.com/dahu
 " =========================
+set laststatus=2 " always show the status bar
 augroup style
     autocmd!
     " if we make these :set then it works, but globally. need to figure out
