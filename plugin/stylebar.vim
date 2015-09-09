@@ -1,5 +1,8 @@
 " =========================
-" Style marking for tutors
+" CSSE2310 style marking for tutors
+" September 2015
+" Author: David Lord	https://github.com/d-lord
+" Thanks: Barry Arthur	https://github.com/dahu
 " =========================
 augroup style
     autocmd!
